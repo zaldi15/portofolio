@@ -3,131 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zaldi Arifa | Mechatronics & AI Portfolio</title>
+    <title>Zaldi Arifa | Mechatronics & AI Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans">
+<body class="bg-slate-950 text-slate-100 font-sans flex flex-col min-h-screen">
 
-    <!-- Navigation Bar -->
-    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800 px-6 py-4 flex justify-between items-center">
-        <span class="text-xl font-bold text-blue-400">Zaldi Arifa.</span>
-        <div class="space-x-6 text-sm hidden md:block">
-            <a href="#about" class="hover:text-blue-400">Tentang</a>
-            <a href="#skills" class="hover:text-blue-400">Keahlian</a>
-            <a href="#research" class="hover:text-blue-400">Riset & Proyek</a>
-            <a href="#certifications" class="hover:text-blue-400">Sertifikasi</a>
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-lg text-white">Kontak</a>
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-blue-400 tracking-wide">ZALDI ARIFA<span class="text-slate-500 text-sm font-normal"> | Portfolio</span></a>
+            <div class="space-x-6 text-sm font-medium hidden md:block">
+                <a href="index.html" class="text-blue-400">Beranda</a>
+                <a href="about.html" class="hover:text-blue-400 transition">Tentang</a>
+                <a href="skills.html" class="hover:text-blue-400 transition">Keahlian</a>
+                <a href="projects.html" class="hover:text-blue-400 transition">Riset & Proyek</a>
+                <a href="certifications.html" class="hover:text-blue-400 transition">Sertifikasi</a>
+                <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition">Kontak</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="max-w-5xl mx-auto px-6 py-20 text-center md:text-left md:flex items-center justify-between">
-        <div class="md:w-2/3">
-            <span class="text-blue-400 text-sm font-semibold tracking-wider uppercase">Mechatronics & AI Engineering Student @ UPI</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold mt-2 leading-tight">Bridging Hardware Automation & Intelligent Control</h1>
-            <p class="mt-4 text-slate-400 text-lg">
-                Fokus pada pemrograman PLC, otomasi industri (BNSP Certified), robotika tertanam, serta algoritma kendali cerdas (MPC & LiDAR) untuk sistem kendaraan otonom.
-            </p>
-            <div class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start">
-                <a href="#research" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-lg font-medium">Lihat Portfolio Proyek</a>
-                <a href="mailto:zaldiarifa.work@gmail.com" class="border border-slate-700 hover:border-slate-500 px-6 py-3 rounded-lg font-medium">Email Saya</a>
-            </div>
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-16 flex flex-col justify-center">
+        <div class="inline-block bg-blue-950/60 text-blue-400 border border-blue-800/60 text-xs font-semibold px-3.5 py-1.5 rounded-full mb-6 w-fit">
+            <i class="fa-solid fa-graduation-cap mr-1.5"></i> Mechatronics & AI Engineering @ UPI
         </div>
-    </section>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+            Bridging Hardware Automation & <br class="hidden md:block"><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">Intelligent Control Research</span>
+        </h1>
+        <p class="mt-6 text-slate-400 text-lg md:text-xl max-w-3xl leading-relaxed">
+            Spesialisasi pada Sistem Kendali Cerdas Kendaraan Otonom (*MPC & LiDAR*), Otomasi Industri Tersertifikasi BNSP Level III (*PLC & BAS*), serta Pengembangan Robotika Tertanam.
+        </p>
 
-    <!-- Keahlian Utama -->
-    <section id="skills" class="max-w-5xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold text-blue-400 mb-6">Kompetensi Teknis Utama</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <i class="fa-solid fa-gears text-blue-400 text-2xl mb-3"></i>
-                <h3 class="font-bold text-lg">Otomasi Industri</h3>
-                <p class="text-sm text-slate-400 mt-2">Pemrograman PLC, Building Automation System (BAS), Desain Sistem Kontrol & Panel Elektrikal (BNSP Certified).</p>
-            </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <i class="fa-solid fa-microchip text-blue-400 text-2xl mb-3"></i>
-                <h3 class="font-bold text-lg">Sistem Kendali & AI</h3>
-                <p class="text-sm text-slate-400 mt-2">Model Predictive Control (MPC), LiDAR Sensor Data Processing, Simulasi Sistem Kendaraan Otonom.</p>
-            </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <i class="fa-solid fa-robot text-blue-400 text-2xl mb-3"></i>
-                <h3 class="font-bold text-lg">Robotika & Tools</h3>
-                <p class="text-sm text-slate-400 mt-2">Pengembangan AI Robotic Kit, Kinematika Robot, Sensor Fusion, MATLAB, Simulink, dan EV Systems.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Riset & Proyek Utama -->
-    <section id="research" class="max-w-5xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold text-blue-400 mb-6">Riset & Proyek Unggulan</h2>
-        
-        <!-- Card Riset ICSMech -->
-        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 mb-6">
-            <div class="flex items-center justify-between">
-                <span class="text-xs bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full border border-blue-700">International Conference Paper (ICSMech 2026)</span>
-                <span class="text-sm text-slate-400">Accepted Presenter</span>
-            </div>
-            <h3 class="text-xl font-bold mt-3">Model Predictive Control for Vehicle Speed Based on LiDAR Sensor Data for Autonomous Vehicle Systems</h3>
-            <p class="text-slate-400 text-sm mt-2">
-                Mengembangkan dan mensimulasikan sistem kendali kecepatan kendaraan otonom menggunakan algoritma MPC berbasis data masukan sensor LiDAR untuk mencapai kestabilan dan keamanan berkendara secara cerdas.
-            </p>
-            <div class="mt-4 flex gap-2">
-                <span class="text-xs bg-slate-700 px-2.5 py-1 rounded">MATLAB/Simulink</span>
-                <span class="text-xs bg-slate-700 px-2.5 py-1 rounded">LiDAR Sensor</span>
-                <span class="text-xs bg-slate-700 px-2.5 py-1 rounded">Model Predictive Control</span>
-            </div>
+        <!-- CTAs -->
+        <div class="mt-8 flex flex-wrap gap-4">
+            <a href="projects.html" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg transition shadow-lg shadow-blue-600/20">
+                Eksplorasi Proyek <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+            </a>
+            <a href="about.html" class="border border-slate-700 hover:border-slate-500 font-medium px-6 py-3 rounded-lg transition">
+                Tentang Saya
+            </a>
         </div>
 
-        <!-- Grid Proyek Tambahan -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h4 class="font-bold text-lg">Otomasi Industri & Sertifikasi BNSP</h4>
-                <p class="text-slate-400 text-sm mt-2">Penerapan skema KKNI Level III Teknik Otomasi Industri meliputi perancangan sistem kontrol PLC dan pengujian kelistrikan industri.</p>
-            </div>
-            <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
-                <h4 class="font-bold text-lg">Quality Control Technician — PT Panasonic</h4>
-                <p class="text-slate-400 text-sm mt-2">Inspeksi unit produksi, analisis malfungsi peralatan manufaktur, dan penjaminan kualitas produk pada lini produksi harian.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sertifikasi & Prestasi -->
-    <section id="certifications" class="max-w-5xl mx-auto px-6 py-12">
-        <h2 class="text-2xl font-bold text-blue-400 mb-6">Sertifikasi & Penghargaan</h2>
-        <ul class="space-y-4">
-            <li class="bg-slate-800 p-4 rounded-lg border border-slate-700 flex justify-between items-center">
-                <div>
-                    <h5 class="font-bold">KKNI Level III Sertifikasi BNSP — Teknik Otomasi Industri</h5>
-                    <p class="text-xs text-slate-400">Sertifikasi Kompetensi Industri Otomasi & PLC</p>
+        <!-- Quick Highlight Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+            <a href="skills.html" class="bg-slate-900/60 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-900/30 text-blue-400 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-microchip"></i>
                 </div>
-                <span class="text-sm text-blue-400 font-semibold">Tersertifikasi</span>
-            </li>
-            <li class="bg-slate-800 p-4 rounded-lg border border-slate-700 flex justify-between items-center">
-                <div>
-                    <h5 class="font-bold">Penerima Hibah Nasional PPK Ormawa 2026</h5>
-                    <p class="text-xs text-slate-400">Program Penguatan Kapasitas Organisasi Kemahasiswaan</p>
+                <h3 class="font-bold text-lg text-slate-100 group-hover:text-blue-400 transition">Otomasi & PLC</h3>
+                <p class="text-slate-400 text-sm mt-2">Sertifikasi BNSP Level III dalam Teknik Otomasi Industri, pemrograman PLC, dan BAS.</p>
+            </a>
+            <a href="projects.html" class="bg-slate-900/60 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-900/30 text-blue-400 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-car-side"></i>
                 </div>
-                <span class="text-sm text-blue-400 font-semibold">Nasional</span>
-            </li>
-            <li class="bg-slate-800 p-4 rounded-lg border border-slate-700 flex justify-between items-center">
-                <div>
-                    <h5 class="font-bold">Lulusan Terbaik (Top Graduate 2024)</h5>
-                    <p class="text-xs text-slate-400">Teknik Otomasi Industri — SMKN 1 Kota Sukabumi</p>
+                <h3 class="font-bold text-lg text-slate-100 group-hover:text-blue-400 transition">Riset Kendaraan Otonom</h3>
+                <p class="text-slate-400 text-sm mt-2">Paper Terpublikasi ICSMech 2026 mengenai Model Predictive Control (MPC) berbasis data LiDAR.</p>
+            </a>
+            <a href="certifications.html" class="bg-slate-900/60 p-6 rounded-xl border border-slate-800 hover:border-blue-500/50 transition group">
+                <div class="w-12 h-12 bg-blue-900/30 text-blue-400 rounded-lg flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition">
+                    <i class="fa-solid fa-award"></i>
                 </div>
-                <span class="text-sm text-blue-400 font-semibold">Penghargaan</span>
-            </li>
-        </ul>
-    </section>
+                <h3 class="font-bold text-lg text-slate-100 group-hover:text-blue-400 transition">Prestasi & Hibah</h3>
+                <p class="text-slate-400 text-sm mt-2">Penerima Hibah Nasional PPK Ormawa 2026 dan Top Graduate SMKN 1 Sukabumi 2024.</p>
+            </a>
+        </div>
+    </main>
 
     <!-- Footer -->
-    <footer id="contact" class="border-t border-slate-800 text-center py-10 mt-12 text-slate-500 text-sm">
-        <p>© 2026 Zaldi Arifa. Built for Mechatronics & AI Engineering Showcase.</p>
-        <div class="mt-4 space-x-4">
-            <a href="https://www.linkedin.com/in/zaldiarifa" target="_blank" class="hover:text-blue-400"><i class="fa-brands fa-linkedin text-lg"></i></a>
-            <a href="mailto:zaldiarifa.work@gmail.com" class="hover:text-blue-400"><i class="fa-solid fa-envelope text-lg"></i></a>
+    <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm gap-4">
+            <p>© 2026 Zaldi Arifa. Designed for Mechatronics & AI Engineering Showcase.</p>
+            <div class="flex space-x-6">
+                <a href="https://linkedin.com/in/zaldiarifa" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="mailto:zaldiarifa.work@gmail.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
         </div>
     </footer>
-
 </body>
 </html>
