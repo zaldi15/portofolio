@@ -9,73 +9,109 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans flex flex-col min-h-screen">
 
+    <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800 px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-blue-400">ZALDI ARIFA</a>
+            <a href="index.html" class="text-xl font-bold text-blue-400">ZALDI ARIFA<span class="text-slate-500 text-sm font-normal"> | Portfolio</span></a>
             <div class="space-x-6 text-sm font-medium hidden md:block">
-                <a href="index.html" class="hover:text-blue-400">Home</a>
-                <a href="about.html" class="hover:text-blue-400">About</a>
-                <a href="skills.html" class="hover:text-blue-400">Skills</a>
-                <a href="projects.html" class="hover:text-blue-400">Research & Projects</a>
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="about.html" class="hover:text-blue-400 transition">About</a>
+                <a href="skills.html" class="hover:text-blue-400 transition">Skills</a>
+                <a href="projects.html" class="hover:text-blue-400 transition">Research & Projects</a>
                 <a href="certifications.html" class="text-blue-400">Certifications</a>
-                <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg">Contact</a>
+                <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition">Contact</a>
             </div>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main class="flex-grow max-w-5xl mx-auto px-6 py-12">
         <h1 class="text-3xl font-extrabold text-blue-400">Certifications & Honors</h1>
-        <p class="text-slate-400 mt-2">National professional licenses, honors, and competition achievements.</p>
+        <p class="text-slate-400 mt-2">National professional licenses, research presentations, language proficiency, and honors.</p>
 
-        <!-- Certifications -->
+        <!-- Certifications & Licenses Section -->
         <section class="mt-8 space-y-4">
-            <h2 class="text-xl font-bold text-slate-100 mb-4"><i class="fa-solid fa-certificate text-blue-400 mr-2"></i>Professional Licenses</h2>
+            <h2 class="text-xl font-bold text-slate-100 mb-4"><i class="fa-solid fa-certificate text-blue-400 mr-2"></i>Professional Licenses & Certifications</h2>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex justify-between items-center">
+            <!-- ICSMech 2026 Certification -->
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
-                    <h3 class="font-bold text-lg text-slate-100">BNSP Level III Certification — Industrial Automation Scheme</h3>
-                    <p class="text-slate-400 text-sm">National Professional Certification Board of Indonesia (BNSP)</p>
-                    <p class="text-xs text-blue-400 mt-1">Competencies: PLC Programming, Building Automation Systems (BAS), & Control Wiring</p>
+                    <div class="flex items-center gap-2">
+                        <h3 class="font-bold text-lg text-slate-100">Oral Presenter — The 2nd International Conference on Smart Mechatronics (ICSMech 2026)</h3>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-1">Issued by: The National Research and Innovation Agency of The Republic of Indonesia (BRIN) & Telkom University</p>
+                    <p class="text-xs text-blue-400 mt-2">Presented Paper: <i>"Model Predictive Control for Vehicle Speed Based on LiDAR Sensor Data for Autonomous Vehicle Systems"</i></p>
                 </div>
-                <span class="bg-blue-900/40 text-blue-300 text-xs px-3 py-1 rounded-full border border-blue-800">Certified</span>
+                <div class="text-right whitespace-nowrap">
+                    <span class="bg-blue-900/40 text-blue-300 text-xs px-3 py-1 rounded-full border border-blue-800">Issued: June 2026</span>
+                </div>
+            </div>
+
+            <!-- BNSP Certification -->
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <h3 class="font-bold text-lg text-slate-100">KKNI Level III Certification — Industrial Automation Engineering Scheme</h3>
+                    <p class="text-slate-400 text-sm mt-1">Issued by: Indonesian National Professional Certification Authority (BNSP)</p>
+                    <p class="text-xs text-blue-400 mt-2">Competencies: PLC Programming, Building Automation Systems (BAS), & Industrial Panel Wiring</p>
+                </div>
+                <div class="text-right whitespace-nowrap">
+                    <span class="bg-blue-900/40 text-blue-300 text-xs px-3 py-1 rounded-full border border-blue-800">Certified</span>
+                </div>
+            </div>
+
+            <!-- TOEIC Certification -->
+            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <h3 class="font-bold text-lg text-slate-100">TOEIC® Listening and Reading Certification — Score: 905/990</h3>
+                    <p class="text-slate-400 text-sm mt-1">Issued by: Educational Testing Service (ETS) / TOEIC Program (Direktorat SMK)</p>
+                    <p class="text-xs text-blue-400 mt-2">Score Breakdown: Listening 465 | Reading 440 (International Business English Proficiency)</p>
+                </div>
+                <div class="text-right whitespace-nowrap">
+                    <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full border border-slate-700">Issued: Aug 2023 – Aug 2025</span>
+                </div>
             </div>
         </section>
 
-        <!-- Awards -->
-        <section class="mt-10 space-y-4">
-            <h2 class="text-xl font-bold text-slate-100 mb-4"><i class="fa-solid fa-trophy text-blue-400 mr-2"></i>Honors & Awards</h2>
+        <!-- Honors & Awards Section -->
+        <section class="mt-10 space-y-4 mb-12">
+            <h2 class="text-xl font-bold text-slate-100 mb-4"><i class="fa-solid fa-trophy text-blue-400 mr-2"></i>Honors & Achievements</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
-                    <span class="text-xs text-blue-400 font-semibold">National Grant</span>
+                    <span class="text-xs text-blue-400 font-semibold uppercase tracking-wider">National Grant</span>
                     <h3 class="font-bold text-slate-100 mt-1">PPK Ormawa 2026 National Grant Recipient</h3>
-                    <p class="text-slate-400 text-sm mt-1">Awarded competitive national funding for student organization capacity building.</p>
+                    <p class="text-slate-400 text-sm mt-1">Awarded competitive national funding for student organization capacity building and technology implementation.</p>
                 </div>
 
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
-                    <span class="text-xs text-blue-400 font-semibold">Academic Excellence</span>
+                    <span class="text-xs text-blue-400 font-semibold uppercase tracking-wider">Academic Excellence</span>
                     <h3 class="font-bold text-slate-100 mt-1">Top Graduate (Class of 2024)</h3>
-                    <p class="text-slate-400 text-sm mt-1">Industrial Automation Engineering, SMKN 1 Sukabumi.</p>
+                    <p class="text-slate-400 text-sm mt-1">Awarded best graduate in Industrial Automation Engineering expertise at SMKN 1 Sukabumi City.</p>
                 </div>
 
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
-                    <span class="text-xs text-blue-400 font-semibold">Scientific Competition</span>
+                    <span class="text-xs text-blue-400 font-semibold uppercase tracking-wider">Scientific Competition</span>
                     <h3 class="font-bold text-slate-100 mt-1">3rd Place — Scientific Paper Competition</h3>
-                    <p class="text-slate-400 text-sm mt-1">National student scientific writing contest.</p>
+                    <p class="text-slate-400 text-sm mt-1">Recognized for innovative technical paper writing and applied technology solution.</p>
                 </div>
 
                 <div class="bg-slate-900 p-5 rounded-xl border border-slate-800">
-                    <span class="text-xs text-blue-400 font-semibold">Campus Competition</span>
-                    <h3 class="font-bold text-slate-100 mt-1">3rd Place — Campus Legislative Competition</h3>
-                    <p class="text-slate-400 text-sm mt-1">University-level governance and policy challenge.</p>
+                    <span class="text-xs text-blue-400 font-semibold uppercase tracking-wider">Campus Leadership</span>
+                    <h3 class="font-bold text-slate-100 mt-1">3rd Place — Campus Legislative Challenge</h3>
+                    <p class="text-slate-400 text-sm mt-1">University-level competition in legislative policy making and organizational governance.</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6">
-        <div class="max-w-6xl mx-auto text-center text-slate-500 text-sm">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm gap-4">
             <p>© 2026 Zaldi Arifa. All rights reserved.</p>
+            <div class="flex space-x-6">
+                <a href="https://linkedin.com/in/zaldiarifa" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="mailto:zaldiarifa.work@gmail.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
         </div>
     </footer>
 </body>
