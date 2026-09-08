@@ -9,67 +9,245 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans flex flex-col min-h-screen">
 
+    <!-- Navbar -->
     <nav class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur border-b border-slate-800 px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-xl font-bold text-blue-400">ZALDI ARIFA</a>
+            <a href="index.html" class="text-xl font-bold text-blue-400">ZALDI ARIFA<span class="text-slate-500 text-sm font-normal"> | Portfolio</span></a>
             <div class="space-x-6 text-sm font-medium hidden md:block">
-                <a href="index.html" class="hover:text-blue-400">Home</a>
-                <a href="about.html" class="hover:text-blue-400">About</a>
-                <a href="skills.html" class="hover:text-blue-400">Skills</a>
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="about.html" class="hover:text-blue-400 transition">About</a>
+                <a href="skills.html" class="hover:text-blue-400 transition">Skills</a>
                 <a href="projects.html" class="text-blue-400">Research & Projects</a>
-                <a href="certifications.html" class="hover:text-blue-400">Certifications</a>
-                <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg">Contact</a>
+                <a href="certifications.html" class="hover:text-blue-400 transition">Certifications</a>
+                <a href="contact.html" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-lg transition">Contact</a>
             </div>
         </div>
     </nav>
 
+    <!-- Main Content -->
     <main class="flex-grow max-w-5xl mx-auto px-6 py-12">
         <h1 class="text-3xl font-extrabold text-blue-400">Research & Engineering Projects</h1>
-        <p class="text-slate-400 mt-2">International publications, engineering solutions, and national grant initiatives.</p>
+        <p class="text-slate-400 mt-2">International publications, control system research, IoT solutions, and software applications.</p>
 
-        <!-- Main Paper -->
-        <section class="mt-8 bg-slate-900 p-8 rounded-2xl border border-blue-600/40 shadow-xl">
-            <div class="flex items-center justify-between flex-wrap gap-2">
-                <span class="bg-blue-900/50 text-blue-300 border border-blue-700 text-xs px-3 py-1 rounded-full font-semibold">
-                    <i class="fa-solid fa-scroll mr-1"></i> Conference Publication
-                </span>
-                <span class="text-slate-400 text-xs">ICSMech 2026 Accepted Paper</span>
-            </div>
-            
-            <h2 class="text-2xl font-bold mt-4 text-slate-100">Model Predictive Control for Vehicle Speed Based on LiDAR Sensor Data for Autonomous Vehicle Systems</h2>
-            <p class="text-blue-400 text-sm mt-1">The 2nd International Conference on Smart Mechatronics (ICSMech 2026)</p>
-            
-            <p class="text-slate-300 text-sm leading-relaxed mt-4">
-                <strong>Abstract / Summary:</strong> This research focuses on the design and implementation of a Model Predictive Control (MPC) scheme for dynamic vehicle speed regulation in autonomous driving scenarios. By leveraging real-time 3D LiDAR point cloud data for obstacle detection, the system calculates optimal speed trajectories to ensure driving stability and collision avoidance under dynamic environmental constraints.
-            </p>
+        <!-- Category 1: Control Systems & Autonomous Vehicles Research -->
+        <section class="mt-10">
+            <h2 class="text-xl font-bold text-slate-100 mb-6 flex items-center">
+                <i class="fa-solid fa-brain text-blue-400 mr-2.5"></i> Control Systems & Autonomous Vehicles Research
+            </h2>
 
-            <div class="mt-6 flex flex-wrap gap-2 text-xs">
-                <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">MATLAB/Simulink</span>
-                <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Model Predictive Control</span>
-                <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">LiDAR Point Cloud</span>
-                <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Autonomous Vehicles</span>
+            <div class="space-y-6">
+                <!-- Project: ICSMech 2026 Paper -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-blue-600/40 shadow-xl">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <span class="bg-blue-900/50 text-blue-300 border border-blue-700 text-xs px-3 py-1 rounded-full font-semibold">
+                            <i class="fa-solid fa-scroll mr-1"></i> Conference Publication
+                        </span>
+                        <span class="text-slate-400 text-xs">June 2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mt-3 text-slate-100">Model Predictive Control for Vehicle Speed Based on LiDAR Sensor Data for Autonomous Vehicle Systems</h3>
+                    <p class="text-blue-400 text-xs mt-1">Accepted Presenter — The 2nd International Conference on Smart Mechatronics (ICSMech 2026)</p>
+                    <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                        Designed an MPC scheme for dynamic vehicle speed regulation using 3D LiDAR point cloud data. Optimized speed trajectories to maintain vehicle stability and obstacle avoidance under real-time constraints.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">MATLAB/Simulink</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Model Predictive Control (MPC)</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">LiDAR Point Cloud</span>
+                    </div>
+                </div>
+
+                <!-- Project: BEV STA-SMC -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full border border-slate-700">Faculty-Supervised Research</span>
+                        <span class="text-slate-400 text-xs">July 2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mt-3 text-slate-100">Speed Control Optimization for BEV using Super-Twisting Algorithm Sliding Mode Control (STA-SMC)</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                        Evaluated STA-SMC as a robust, non-linear alternative to conventional PID controllers for Battery Electric Vehicle (BEV) speed regulation across a 6,000-second Worldwide Harmonized Light Vehicles Test Procedure (WLTC) driving cycle in MATLAB/Simulink.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 mt-3">
+                        <li>Successfully eliminated control signal chattering while providing smooth, continuous output.</li>
+                        <li>Significantly reduced mechanical stress and workload on pedal actuators compared to standard PID control.</li>
+                    </ul>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">MATLAB / Simulink</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">STA-SMC</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">BEV Powertrain</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">WLTC Driving Cycle</span>
+                    </div>
+                </div>
+
+                <!-- Project: WasteSight INGENIC 2026 -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex justify-between items-start flex-wrap gap-2">
+                        <span class="bg-amber-900/40 text-amber-300 border border-amber-800 text-xs px-3 py-1 rounded-full font-semibold">International Finalist — INGENIC 2026</span>
+                        <span class="text-slate-400 text-xs">July 2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mt-3 text-slate-100">WasteSight: AI-Sorted & IoT-Monitored Methane-to-Energy System</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed mt-3">
+                        Conceptualized an end-to-end mechatronics and AI framework engineered to mitigate severe landfill methane emissions at TPST Bantar Gebang by integrating upstream robotic sorting with downstream thermodynamic energy conversion.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 mt-3">
+                        <li><strong>Upstream AI Sorting:</strong> Modeled automated sorting rigs using CNNs, Near-Infrared (NIR) sensors, and pneumatic air-jets to elevate methane purity to 50% LPG-grade.</li>
+                        <li><strong>Thermodynamic Conversion:</strong> Designed multi-stage gas scrubbing skids and Organic Rankine Cycle (ORC) units targeted to generate up to 24.5 MWe of clean electricity.</li>
+                        <li><strong>Environmental Impact:</strong> Projected to reduce up to 966,000 tonnes of CO2-equivalent emissions annually.</li>
+                    </ul>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Edge AI & CNN</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">NIR Array & Pneumatics</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Renewable Energy</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Other Projects -->
-        <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <span class="text-xs text-blue-400 font-semibold uppercase">Industrial Automation</span>
-                <h3 class="text-lg font-bold text-slate-100 mt-1">Industrial Automation System Design & BAS</h3>
-                <p class="text-slate-400 text-sm mt-2">Engineering PLC-based control architectures, industrial panel wiring, and Building Automation Systems (BAS) aligned with BNSP Level III national certification standards.</p>
-            </div>
+        <!-- Category 2: Embedded Systems, IoT & Renewable Energy -->
+        <section class="mt-12">
+            <h2 class="text-xl font-bold text-slate-100 mb-6 flex items-center">
+                <i class="fa-solid fa-microchip text-blue-400 mr-2.5"></i> Embedded Systems, IoT & Green Technology
+            </h2>
 
-            <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
-                <span class="text-xs text-blue-400 font-semibold uppercase">National Competitive Grant</span>
-                <h3 class="text-lg font-bold text-slate-100 mt-1">PPK Ormawa 2026 Grant Execution</h3>
-                <p class="text-slate-400 text-sm mt-2">Supervising technical execution and project management for a national community technology implementation grant funded by Kemendikbudristek.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project: Green Energy Bank -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                            <span class="text-xs text-blue-400 font-semibold uppercase">Community Technology</span>
+                            <span class="text-slate-500 text-xs">Oct 2024</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Green Energy Bank – Wiyata Tech Village</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Engineered and deployed a 300 Wp centralized off-grid solar power system for public security posts and charging stations in Kutamanah Village, Purwakarta.
+                        </p>
+                        <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 mt-3">
+                            <li>Core "Energy Box": 300 Wp solar array, 10A MPPT, 1200W inverter, and 1.2 kWh Li-ion battery.</li>
+                            <li>Achieved 90% community operational self-sufficiency through resident training.</li>
+                            <li>Co-authored field research manuscript (currently under peer review).</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/60 flex flex-wrap gap-1.5 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Off-Grid Solar</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Lithium-ion System</span>
+                    </div>
+                </div>
+
+                <!-- Project: Smart Water Filtration System (PKM) -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                            <span class="text-xs text-blue-400 font-semibold uppercase">Research Assistant Project</span>
+                            <span class="text-slate-500 text-xs">April 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Automated Smart Water Filtration System</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Engineered an automated smart water filtration and telemetry system under faculty supervision for real-time water quality management.
+                        </p>
+                        <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 mt-3">
+                            <li>Integrated multi-parameter water quality sensors with microcontrollers.</li>
+                            <li>Implemented automated valve control logic for automated backwashing and filtering.</li>
+                            <li>Optimized filtration cycle efficiency and processing reliability.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/60 flex flex-wrap gap-1.5 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Water Telemetry</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Automated Valve Logic</span>
+                    </div>
+                </div>
+
+                <!-- Project: Smart Trash Bin -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                            <span class="text-xs text-blue-400 font-semibold uppercase">IoT Prototype</span>
+                            <span class="text-slate-500 text-xs">Jan 2026</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Smart Trash Bin: Automated Waste & Odor Monitoring</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Deployed an embedded sanitation system with real-time fill level (HC-SR04) and odor detection (MQ-135 ammonia sensor) using rule-based AI logic on Arduino Uno R3.
+                        </p>
+                        <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 mt-3">
+                            <li>168-hour field trial collecting 2,016 telemetry data samples with 100% uptime.</li>
+                            <li>Analyzed telemetry in Python (Pandas) confirming inverse fill-to-gas correlation.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/60 flex flex-wrap gap-1.5 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Arduino C++</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Python / Pandas</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">HC-SR04 & MQ-135</span>
+                    </div>
+                </div>
+
+                <!-- Project: Industrial Garage Door & Lifter -->
+                <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start flex-wrap gap-2 mb-2">
+                            <span class="text-xs text-blue-400 font-semibold uppercase">Industrial Automation</span>
+                            <span class="text-slate-500 text-xs">Dec 2023</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-100">Auto-Manual Garage Door & Industrial Lifter</h3>
+                        <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                            Designed and programmed an automated and manual override control system for industrial garage doors and material lifters.
+                        </p>
+                        <ul class="list-disc list-inside text-slate-400 text-xs space-y-1 mt-3">
+                            <li>Configured Schneider PLC ladder logic for multi-mode operations.</li>
+                            <li>Designed user-friendly Schneider HMI screens for real-time monitoring and controls.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-slate-800/60 flex flex-wrap gap-1.5 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Schneider PLC</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Schneider HMI</span>
+                        <span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded">Ladder Logic</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 3: Software Engineering -->
+        <section class="mt-12 mb-12">
+            <h2 class="text-xl font-bold text-slate-100 mb-6 flex items-center">
+                <i class="fa-solid fa-code text-blue-400 mr-2.5"></i> Software Engineering & Applications
+            </h2>
+
+            <div class="bg-slate-900 p-6 rounded-2xl border border-slate-800">
+                <div class="flex justify-between items-start flex-wrap gap-2">
+                    <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full border border-slate-700">Desktop Application</span>
+                    <span class="text-slate-400 text-xs">Jan 2026</span>
+                </div>
+                <h3 class="text-xl font-bold mt-3 text-slate-100">Pomodo+ — Desktop Productivity & Pomodoro App</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mt-2">
+                    Developed a JavaFX desktop productivity tool integrating the Pomodoro Technique with structured task management, custom reminders, and session analytics.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 text-xs text-slate-400">
+                    <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                        <strong class="text-slate-200">Architecture:</strong> JavaFX application implementing the DAO (Data Access Object) design pattern.
+                    </div>
+                    <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+                        <strong class="text-slate-200">Database:</strong> Relational SQL database (ERD) managing Users, Tasks, and Session Analytics.
+                    </div>
+                </div>
+                <div class="mt-5 flex items-center justify-between flex-wrap gap-4 pt-4 border-t border-slate-800">
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">Java</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">JavaFX</span>
+                        <span class="bg-slate-800 text-slate-300 px-3 py-1 rounded-md">SQL / Relational DB</span>
+                    </div>
+                    <a href="https://github.com/zaldi15/PomodoroSessions" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition inline-flex items-center">
+                        <i class="fa-brands fa-github mr-2 text-sm"></i> View Repository
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="border-t border-slate-800 bg-slate-950 py-8 px-6">
-        <div class="max-w-6xl mx-auto text-center text-slate-500 text-sm">
-            <p>© 2026 Zaldi Arifa. All rights reserved.</p>
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm gap-4">
+            <p>© 2026 Zaldi Arifa. Designed for Mechatronics & AI Engineering Showcase.</p>
+            <div class="flex space-x-6">
+                <a href="https://linkedin.com/in/zaldiarifa" target="_blank" class="hover:text-blue-400 transition"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="mailto:zaldiarifa.work@gmail.com" class="hover:text-blue-400 transition"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
         </div>
     </footer>
 </body>
